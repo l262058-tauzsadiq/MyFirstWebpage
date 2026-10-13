@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+
+    <style>
+        *{
+            margin: 3px;
+            padding: 8px;
+            /* border: solid black 1px; */
+        }
+        body{
+            height: 100vh;
+            background-color: rgb(224, 224, 224);
+        }
+        table, th, td{
+            border: solid black 1px;
+        }
+        th{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: red; text-align: center;">Continental Hotel Reservation Form</h1>
+        <table style="background-color: rgb(204, 229, 255); margin: auto;">
+            <form>
+            <tr>
+                <th>
+                    <label for="name">Name</label>
+                </th>
+                <td>
+                    <input type="text" placeholder="enter you name" id="name">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="mail">Email</label>
+                </th>
+                <td>
+                    <input type="email" placeholder="info@continental.pk" id="mail">
+                </td>
+            </tr>
+            <tr>    
+                <th>
+                    <label for="num">Mobile number</label>
+                </th>
+                <td>
+                    <input type="number" placeholder="enter your cell no" id="num">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="ctime">Arrival Time</label>
+                </th>
+                <td>
+                    <input type="time" id="ctime">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="gtime">Departure</label>
+                </th>
+                <td>
+                    <input type="time" id="gtime">
+                    <input type="time" id="gtime">
+                </td>
+            </tr>
+            <tr>
+                <th>Room Type</th>
+                <td>
+                    <input type="radio" name="roomtype"> Single
+                    <input type="radio" name="roomtype"> Double <br>
+                    <input type="radio" name="roomtype"> Presidential Suite
+                </td>
+            </tr>
+            <tr>
+                <th>Preferences</th>
+                <td>
+                    <input type="checkbox" id="preference"> Non-Smoking <br>
+                    <input type="checkbox" id="preference"> Internet <br>
+                    <input type="checkbox" id="preference"> Firm Mattress <br>
+                </td>
+            </tr>
+            <tr>
+                <th>Mode of Payment</th>
+                <td>
+                    <input type="radio" name="payment" id="pay"> Cash
+                    <input type="radio" name="payment" id="pay"> Check <br>
+                    <input type="radio" name="payment" id="pay"> Credit Card
+                        <select>
+                            <option value="HBL">HBL</option>
+                            <option value="HBL">UBL</option>
+                            <option value="HBL">BOP</option>
+                            <option value="HBL">Meezan</option>
+                            <option value="HBL">Allied</option>
+                        </select>
+                </td>   
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align: center;">
+                    <input type="submit" value="Send Data">
+                </th>
+            </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>
